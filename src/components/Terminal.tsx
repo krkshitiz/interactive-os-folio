@@ -56,8 +56,8 @@ GitHub:   github.com/krkshitiz
 LinkedIn: linkedin.com/in/kumar-kshitiz-565220218
 Twitter:  @kumarkshitiz5`,
   neofetch: `    ╔══════════════╗
-    ║  portfolio   ║    OS: PortfolioOS v1.0
-    ║      OS      ║    Shell: terminal.tsx
+    ║  Kshitiz     ║    OS: Kshitiz.exe v1.0
+    ║    .exe      ║    Shell: terminal.tsx
     ╚══════════════╝    Runtime: React 18
                         Framework: Vite 5
     ██ ██ ██ ██         Theme: Neon Dark
@@ -66,7 +66,7 @@ Twitter:  @kumarkshitiz5`,
 
 const Terminal = ({ onCommand }: TerminalProps) => {
   const [lines, setLines] = useState<TerminalLine[]>([
-    { type: "output", text: 'Welcome to PortfolioOS Terminal. Type "help" for commands.' },
+    { type: "output", text: 'Welcome to Kshitiz.exe Terminal. Type "help" for commands.' },
   ]);
   const [input, setInput] = useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
