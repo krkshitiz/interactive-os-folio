@@ -11,35 +11,33 @@ interface TerminalLine {
 
 const commandResponses: Record<string, string> = {
   help: `Available commands:
-  help     - Show this help
-  about    - About me
-  projects - View projects
-  skills   - View skills
-  contact  - Contact info
+  help       - Show this help
+  about      - About me
+  projects   - View projects
+  skills     - View skills
+  contact    - Contact info
   experience - Work experience
-  clear    - Clear terminal
-  neofetch - System info`,
-  about: `┌─────────────────────────────────┐
-│  Software Engineer              │
-│  B.Tech CSE — DIT University    │
-│  CGPA: 8.35 (2020–2024)        │
-│  Currently @ HERE Technologies  │
-│  Full-Stack · Spring Boot ·     │
-│  React · AWS · Automation       │
-└─────────────────────────────────┘`,
+  clear      - Clear terminal
+  neofetch   - System info`,
+  about: `┌───────────────────────────────────┐
+│  Kumar Kshitiz                    │
+│  Software Engineer                │
+│  Currently @ HERE Technologies    │
+│  Mumbai, Maharashtra              │
+│  Spring Boot · React · AWS        │
+└───────────────────────────────────┘`,
   experience: `[01] HERE Technologies — SWE Trainee (May 2025–Present)
-     • Custom Workflow Orchestrator for release automation
-     • Spring Boot + AWS (S3, DynamoDB) + MySQL
-     • GitLab/Jenkins CI/CD integration
+     • Spring Boot backend for release workflow automation
+     • AWS (S3, DynamoDB) + MySQL integration
+     • GitLab/Jenkins CI/CD pipeline integration
      • React dashboard for release tracking
 
 [02] Design Karkhana — SWE Intern (Aug 2024–Feb 2025)
      • Built responsive web pages with React JS
      • Optimized performance & user experience`,
-  projects: `[01] Workflow Orchestrator — Release automation (Spring Boot, AWS, React)
-[02] Resume Analyzer — AI-driven ATS scoring (Gemini API, Spring Boot)
-[03] YT Bookmark Extension — Chrome extension (JS, Chrome APIs)
-[04] Portfolio OS — This interactive portfolio (React, Framer Motion)`,
+  projects: `[01] Resume Analyzer — AI-driven ATS scoring (Gemini API, Spring Boot)
+[02] YT Bookmark Extension — Chrome extension (JS, Chrome APIs)
+[03] Portfolio OS — This interactive portfolio (React, Framer Motion)`,
   skills: `Languages:  Java       █████████░ 90%
             JavaScript ████████░░ 80%
             Python     ██████░░░░ 65%
@@ -53,16 +51,17 @@ Frontend:   React      ████████░░ 80%
 
 Cloud:      AWS        ███████░░░ 70%
 Tools:      Git, JIRA, Postman, IntelliJ`,
-  contact: `Email:    (your email)
-GitHub:   github.com/(your-username)
-LinkedIn: linkedin.com/in/(your-profile)`,
+  contact: `Email:    kumarkshitiz616@gmail.com
+GitHub:   github.com/krkshitiz
+LinkedIn: linkedin.com/in/kumar-kshitiz-565220218
+Twitter:  @kumarkshitiz5`,
   neofetch: `    ╔══════════════╗
     ║  portfolio   ║    OS: PortfolioOS v1.0
     ║      OS      ║    Shell: terminal.tsx
     ╚══════════════╝    Runtime: React 18
                         Framework: Vite 5
     ██ ██ ██ ██         Theme: Neon Dark
-                        User: SWE @ HERE Tech`,
+                        User: Kumar Kshitiz`,
 };
 
 const Terminal = ({ onCommand }: TerminalProps) => {
