@@ -3,27 +3,27 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AI Dashboard",
-    desc: "Real-time machine learning analytics with interactive visualizations.",
-    stack: ["Python", "React", "D3.js", "FastAPI"],
+    title: "Custom Workflow Orchestrator",
+    desc: "End-to-end release lifecycle automation across multiple internal products at HERE Technologies. Integrated with GitLab, Jenkins, AWS S3, DynamoDB, and MySQL.",
+    stack: ["Spring Boot", "React", "AWS", "MySQL", "Jenkins"],
     color: "neon-cyan",
   },
   {
-    title: "CryptoTracker",
-    desc: "Live cryptocurrency monitoring with WebSocket real-time updates.",
-    stack: ["Next.js", "WebSocket", "TailwindCSS"],
+    title: "Resume Analyzer & Job Recommender",
+    desc: "Full-stack AI-driven resume evaluation using Google Gemini API and Apache Tika for ATS scoring. Integrated Adzuna API for job recommendations.",
+    stack: ["Spring Boot", "React", "MySQL", "Gemini API", "JPA"],
     color: "neon-purple",
   },
   {
-    title: "DevConnect",
-    desc: "A social platform for developers to share projects and collaborate.",
-    stack: ["Node.js", "GraphQL", "PostgreSQL", "React"],
+    title: "YT Bookmark Chrome Extension",
+    desc: "Chrome extension to save and navigate YouTube video timestamps with custom labels. Persistent storage with Chrome Sync API and cross-device sync.",
+    stack: ["JavaScript", "HTML", "CSS", "Chrome APIs"],
     color: "neon-green",
   },
   {
     title: "Portfolio OS",
     desc: "This interactive OS-style portfolio you're exploring right now.",
-    stack: ["React", "Framer Motion", "Tailwind"],
+    stack: ["React", "TypeScript", "Framer Motion", "Tailwind"],
     color: "neon-cyan",
   },
 ];

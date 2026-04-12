@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "TypeScript", level: 90, color: "bg-neon-cyan" },
-  { name: "React", level: 95, color: "bg-neon-cyan" },
-  { name: "Node.js", level: 80, color: "bg-neon-green" },
-  { name: "Python", level: 75, color: "bg-neon-purple" },
-  { name: "Tailwind CSS", level: 90, color: "bg-neon-cyan" },
-  { name: "PostgreSQL", level: 70, color: "bg-neon-green" },
-  { name: "GraphQL", level: 65, color: "bg-neon-purple" },
-  { name: "Docker", level: 60, color: "bg-neon-green" },
+  { name: "Java", level: 90, color: "bg-neon-cyan" },
+  { name: "Spring Boot", level: 85, color: "bg-neon-cyan" },
+  { name: "React", level: 80, color: "bg-neon-cyan" },
+  { name: "JavaScript", level: 80, color: "bg-neon-green" },
+  { name: "SQL / MySQL", level: 80, color: "bg-neon-green" },
+  { name: "AWS (S3, DynamoDB)", level: 70, color: "bg-neon-purple" },
+  { name: "Python", level: 65, color: "bg-neon-purple" },
+  { name: "REST APIs / Microservices", level: 85, color: "bg-neon-cyan" },
+  { name: "Git / CI-CD", level: 75, color: "bg-neon-green" },
+  { name: "HTML / CSS", level: 80, color: "bg-neon-green" },
 ];
 
 const SkillsWindow = () => (

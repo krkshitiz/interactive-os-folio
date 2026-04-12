@@ -16,39 +16,53 @@ const commandResponses: Record<string, string> = {
   projects - View projects
   skills   - View skills
   contact  - Contact info
+  experience - Work experience
   clear    - Clear terminal
   neofetch - System info`,
-  about: `┌─────────────────────────────┐
-│  Full-Stack Developer       │
-│  Passionate about building  │
-│  immersive digital          │
-│  experiences with modern    │
-│  web technologies.          │
-└─────────────────────────────┘`,
-  projects: `[01] Portfolio OS — Interactive portfolio (React, Tailwind, Framer Motion)
-[02] AI Dashboard — Real-time ML analytics (Python, React, D3)
-[03] CryptoTracker — Live crypto monitoring (Next.js, WebSocket)
-[04] DevConnect — Developer social platform (Node.js, GraphQL)`,
-  skills: `Languages:  TypeScript ████████░░ 80%
-            Python     ███████░░░ 70%
-            Rust       █████░░░░░ 50%
+  about: `┌─────────────────────────────────┐
+│  Software Engineer              │
+│  B.Tech CSE — DIT University    │
+│  CGPA: 8.35 (2020–2024)        │
+│  Currently @ HERE Technologies  │
+│  Full-Stack · Spring Boot ·     │
+│  React · AWS · Automation       │
+└─────────────────────────────────┘`,
+  experience: `[01] HERE Technologies — SWE Trainee (May 2025–Present)
+     • Custom Workflow Orchestrator for release automation
+     • Spring Boot + AWS (S3, DynamoDB) + MySQL
+     • GitLab/Jenkins CI/CD integration
+     • React dashboard for release tracking
 
-Frontend:   React      █████████░ 90%
-            Tailwind   ████████░░ 80%
+[02] Design Karkhana — SWE Intern (Aug 2024–Feb 2025)
+     • Built responsive web pages with React JS
+     • Optimized performance & user experience`,
+  projects: `[01] Workflow Orchestrator — Release automation (Spring Boot, AWS, React)
+[02] Resume Analyzer — AI-driven ATS scoring (Gemini API, Spring Boot)
+[03] YT Bookmark Extension — Chrome extension (JS, Chrome APIs)
+[04] Portfolio OS — This interactive portfolio (React, Framer Motion)`,
+  skills: `Languages:  Java       █████████░ 90%
+            JavaScript ████████░░ 80%
+            Python     ██████░░░░ 65%
+            SQL        ████████░░ 80%
 
-Backend:    Node.js    ████████░░ 80%
-            PostgreSQL ███████░░░ 70%`,
-  contact: `Email:    hello@developer.dev
-GitHub:   github.com/developer
-LinkedIn: linkedin.com/in/developer
-Twitter:  @developer`,
+Backend:    Spring Boot █████████░ 85%
+            REST APIs   █████████░ 85%
+
+Frontend:   React      ████████░░ 80%
+            HTML/CSS   ████████░░ 80%
+
+Cloud:      AWS        ███████░░░ 70%
+Tools:      Git, JIRA, Postman, IntelliJ`,
+  contact: `Email:    (your email)
+GitHub:   github.com/(your-username)
+LinkedIn: linkedin.com/in/(your-profile)`,
   neofetch: `    ╔══════════════╗
     ║  portfolio   ║    OS: PortfolioOS v1.0
     ║      OS      ║    Shell: terminal.tsx
     ╚══════════════╝    Runtime: React 18
                         Framework: Vite 5
     ██ ██ ██ ██         Theme: Neon Dark
-                        Resolution: ∞ × ∞`,
+                        User: SWE @ HERE Tech`,
 };
 
 const Terminal = ({ onCommand }: TerminalProps) => {
@@ -68,10 +82,7 @@ const Terminal = ({ onCommand }: TerminalProps) => {
     const cmd = input.trim().toLowerCase();
     if (!cmd) return;
 
-    const newLines: TerminalLine[] = [
-      ...lines,
-      { type: "input", text: cmd },
-    ];
+    const newLines: TerminalLine[] = [...lines, { type: "input", text: cmd }];
 
     if (cmd === "clear") {
       setLines([]);
@@ -102,9 +113,7 @@ const Terminal = ({ onCommand }: TerminalProps) => {
       <div className="flex-1 overflow-y-auto space-y-1 mb-2">
         {lines.map((line, i) => (
           <div key={i} className={line.type === "input" ? "text-neon-cyan" : "text-foreground/80"}>
-            {line.type === "input" && (
-              <span className="text-neon-green mr-1">❯</span>
-            )}
+            {line.type === "input" && <span className="text-neon-green mr-1">❯</span>}
             <pre className="whitespace-pre-wrap inline font-mono text-xs leading-relaxed">
               {line.text}
             </pre>

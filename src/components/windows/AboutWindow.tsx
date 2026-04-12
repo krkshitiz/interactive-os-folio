@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Zap } from "lucide-react";
+import { MapPin, Calendar, Zap, GraduationCap, Building2 } from "lucide-react";
 
 const AboutWindow = () => (
   <div className="space-y-4">
@@ -12,8 +12,8 @@ const AboutWindow = () => (
         <span className="text-2xl">👨‍💻</span>
       </div>
       <div>
-        <h2 className="text-lg font-semibold text-foreground">John Developer</h2>
-        <p className="text-sm text-neon-cyan font-mono">Full-Stack Engineer</p>
+        <h2 className="text-lg font-semibold text-foreground">Software Engineer</h2>
+        <p className="text-sm text-neon-cyan font-mono">Full-Stack Developer</p>
       </div>
     </motion.div>
 
@@ -23,15 +23,16 @@ const AboutWindow = () => (
       transition={{ delay: 0.1 }}
       className="text-sm text-muted-foreground leading-relaxed"
     >
-      Passionate developer with 5+ years building immersive web experiences.
-      I love creating tools that feel alive — blending art, code, and interaction design
-      into products people remember.
+      B.Tech CSE graduate from DIT University (CGPA 8.35). Currently a Software Engineer Trainee at HERE Technologies,
+      building workflow orchestration systems with Spring Boot, AWS, and React.
+      Passionate about automation, clean architecture, and crafting great user experiences.
     </motion.p>
 
     <div className="grid grid-cols-1 gap-2">
       {[
-        { icon: MapPin, text: "San Francisco, CA", color: "text-neon-purple" },
-        { icon: Calendar, text: "5+ years experience", color: "text-neon-green" },
+        { icon: Building2, text: "HERE Technologies — SWE Trainee", color: "text-neon-cyan" },
+        { icon: GraduationCap, text: "DIT University — B.Tech CSE (8.35)", color: "text-neon-purple" },
+        { icon: MapPin, text: "Dehradun, Uttarakhand", color: "text-neon-green" },
         { icon: Zap, text: "Open to opportunities", color: "text-neon-cyan" },
       ].map(({ icon: Icon, text, color }, i) => (
         <motion.div
