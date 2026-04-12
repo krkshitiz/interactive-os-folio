@@ -3,10 +3,10 @@ import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-  { icon: Mail, label: "hello@developer.dev", href: "mailto:hello@developer.dev", color: "text-neon-cyan" },
-  { icon: Github, label: "github.com/developer", href: "#", color: "text-foreground/80" },
-  { icon: Linkedin, label: "linkedin.com/in/developer", href: "#", color: "text-neon-cyan" },
-  { icon: Twitter, label: "@developer", href: "#", color: "text-neon-purple" },
+  { icon: Mail, label: "kumarkshitiz616@gmail.com", href: "mailto:kumarkshitiz616@gmail.com", color: "text-neon-cyan" },
+  { icon: Github, label: "github.com/krkshitiz", href: "https://github.com/krkshitiz", color: "text-foreground/80" },
+  { icon: Linkedin, label: "linkedin.com/in/kumar-kshitiz", href: "https://www.linkedin.com/in/kumar-kshitiz-565220218/", color: "text-neon-cyan" },
+  { icon: Twitter, label: "@kumarkshitiz5", href: "https://twitter.com/kumarkshitiz5", color: "text-neon-purple" },
 ];
 
 const ContactWindow = () => {
@@ -19,6 +19,8 @@ const ContactWindow = () => {
           <motion.a
             key={i}
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: i * 0.05 }}

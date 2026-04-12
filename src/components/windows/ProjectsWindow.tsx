@@ -3,12 +3,6 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Custom Workflow Orchestrator",
-    desc: "End-to-end release lifecycle automation across multiple internal products at HERE Technologies. Integrated with GitLab, Jenkins, AWS S3, DynamoDB, and MySQL.",
-    stack: ["Spring Boot", "React", "AWS", "MySQL", "Jenkins"],
-    color: "neon-cyan",
-  },
-  {
     title: "Resume Analyzer & Job Recommender",
     desc: "Full-stack AI-driven resume evaluation using Google Gemini API and Apache Tika for ATS scoring. Integrated Adzuna API for job recommendations.",
     stack: ["Spring Boot", "React", "MySQL", "Gemini API", "JPA"],
