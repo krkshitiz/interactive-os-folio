@@ -51,7 +51,7 @@ const BootScreen = ({ onComplete }: BootScreenProps) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
             >
-              {">"} portfolio_os v1.0
+              {">"} Kshitiz.exe v1.0
             </motion.h1>
             <div className="font-mono text-sm space-y-1">
               {bootLines.slice(0, visibleLines).map((line, i) => (

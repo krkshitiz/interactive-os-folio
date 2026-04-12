@@ -107,7 +107,7 @@ const Index = () => {
 
           {/* Mobile layout */}
           <div className="md:hidden p-4 pb-16 h-full overflow-y-auto space-y-4 relative z-10">
-            <h1 className="neon-text-cyan font-mono text-lg font-bold mb-4">PortfolioOS</h1>
+            <h1 className="neon-text-cyan font-mono text-lg font-bold mb-4">Kshitiz.exe</h1>
             
             {/* Mobile icon grid */}
             <div className="grid grid-cols-5 gap-1 mb-4">

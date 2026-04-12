@@ -28,7 +28,7 @@ const Taskbar = ({ openWindows, onIconClick }: TaskbarProps) => {
       <div className="flex items-center gap-1">
         <div className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-muted/30 transition-colors cursor-pointer">
           <Monitor className="w-4 h-4 text-neon-cyan" />
-          <span className="text-xs font-mono text-muted-foreground hidden sm:inline">PortfolioOS</span>
+          <span className="text-xs font-mono text-muted-foreground hidden sm:inline">Kshitiz.exe</span>
         </div>
         <div className="w-px h-5 bg-border/50 mx-1" />
         {icons.map(({ id, icon: Icon, label }) => {
