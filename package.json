@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build && npm run prepare:pages",
+    "deploy": "gh-pages -d dist -b gh-pages",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepare:pages": "node scripts/prepare-gh-pages.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
