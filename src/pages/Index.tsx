@@ -105,6 +105,7 @@ const Index = () => {
       {booted && (
         <>
           <GridBackground />
+          <StarfieldBackground />
 
           {/* Mobile layout */}
           <div className="md:hidden p-4 pb-16 h-full overflow-y-auto space-y-4 relative z-10">
