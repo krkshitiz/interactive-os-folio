@@ -4,6 +4,7 @@ import BootScreen from "@/components/BootScreen";
 import GridBackground from "@/components/GridBackground";
 import StarfieldBackground from "@/components/StarfieldBackground";
 import DesktopIcon from "@/components/DesktopIcon";
+import DesktopHero from "@/components/DesktopHero";
 import DraggableWindow from "@/components/DraggableWindow";
 import Taskbar from "@/components/Taskbar";
 import Terminal from "@/components/Terminal";
@@ -151,6 +152,9 @@ const Index = () => {
                 <DesktopIcon key={di.id} {...di} onClick={() => toggleWindow(di.id)} />
               ))}
             </div>
+
+            {/* Center hero */}
+            <DesktopHero />
 
             {/* Windows */}
             {(Object.keys(windows) as WindowId[]).map((id) => {
