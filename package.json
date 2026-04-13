@@ -3,18 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://krkshitiz.github.io/interactive-os-folio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build && npm run prepare:pages",
-    "deploy": "gh-pages -d dist -b gh-pages",
     "build:dev": "vite build --mode development",
-    "preview": "vite preview",
     "lint": "eslint .",
+    "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "prepare:pages": "node scripts/prepare-gh-pages.mjs"
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -89,7 +85,6 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19",
-    "vitest": "^3.2.4",
-    "gh-pages": "^6.1.1"
+    "vitest": "^3.2.4"
   }
 }

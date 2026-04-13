@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import { AnimatePresence } from "framer-motion";
 import BootScreen from "@/components/BootScreen";
 import GridBackground from "@/components/GridBackground";
-import StarfieldBackground from "@/components/StarfieldBackground";
 import DesktopIcon from "@/components/DesktopIcon";
 import DraggableWindow from "@/components/DraggableWindow";
 import Taskbar from "@/components/Taskbar";
@@ -104,8 +103,7 @@ const Index = () => {
 
       {booted && (
         <>
-           <GridBackground />
-           <StarfieldBackground />
+          <GridBackground />
 
           {/* Mobile layout */}
           <div className="md:hidden p-4 pb-16 h-full overflow-y-auto space-y-4 relative z-10">
