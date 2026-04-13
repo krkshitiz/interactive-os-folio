@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { AnimatePresence } from "framer-motion";
 import BootScreen from "@/components/BootScreen";
 import GridBackground from "@/components/GridBackground";
+import StarfieldBackground from "@/components/StarfieldBackground";
 import DesktopIcon from "@/components/DesktopIcon";
 import DraggableWindow from "@/components/DraggableWindow";
 import Taskbar from "@/components/Taskbar";
