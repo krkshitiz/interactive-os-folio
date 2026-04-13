@@ -153,6 +153,9 @@ const Index = () => {
               ))}
             </div>
 
+            {/* Center hero */}
+            <DesktopHero />
+
             {/* Windows */}
             {(Object.keys(windows) as WindowId[]).map((id) => {
               const cfg = windowConfigs[id];
