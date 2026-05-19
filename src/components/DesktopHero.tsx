@@ -33,14 +33,14 @@ const DesktopHero = () => {
 
       {/* Center text */}
       <div className="relative text-center z-10">
-        <motion.h1
+        <motion.p
           className="font-mono text-4xl font-bold tracking-widest neon-text-cyan"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           KSHITIZ
-        </motion.h1>
+        </motion.p>
         <motion.p
           className="font-mono text-sm text-muted-foreground mt-2 tracking-[0.3em] uppercase"
           initial={{ opacity: 0 }}

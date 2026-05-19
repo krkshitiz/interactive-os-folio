@@ -34,13 +34,16 @@ const ContactWindow = () => {
       <div className="border-t border-border/30 pt-3">
         <p className="text-xs text-muted-foreground mb-2 font-mono">Quick message:</p>
         <div className="flex gap-2">
+          <label htmlFor="contact-message" className="sr-only">Quick message</label>
           <input
+            id="contact-message"
             value={msg}
             onChange={(e) => setMsg(e.target.value)}
             placeholder="Type a message..."
+            aria-label="Quick message"
             className="flex-1 bg-muted/30 rounded-lg px-3 py-2 text-xs font-mono outline-none border border-border/50 focus:border-neon-cyan/50 text-foreground transition-colors"
           />
-          <button className="p-2 rounded-lg bg-neon-cyan/10 text-neon-cyan hover:bg-neon-cyan/20 transition-colors">
+          <button aria-label="Send message" className="p-2 rounded-lg bg-neon-cyan/10 text-neon-cyan hover:bg-neon-cyan/20 transition-colors">
             <Send className="w-4 h-4" />
           </button>
         </div>
