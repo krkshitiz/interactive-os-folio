@@ -37,6 +37,7 @@ const Taskbar = ({ openWindows, onIconClick }: TaskbarProps) => {
             <button
               key={id}
               onClick={() => onIconClick(id)}
+              aria-label={`${isOpen ? "Focus" : "Open"} ${label} window`}
               className={`flex items-center gap-1.5 px-2 py-1.5 rounded-md text-xs font-mono transition-all ${
                 isOpen
                   ? "bg-muted/50 text-neon-cyan"

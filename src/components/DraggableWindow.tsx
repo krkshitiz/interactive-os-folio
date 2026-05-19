@@ -116,17 +116,19 @@ const DraggableWindow = ({
           >
             <div className="flex items-center gap-2">
               <div className={`w-2 h-2 rounded-full ${dotColors[color]} animate-glow-pulse`} />
-              <span className="text-xs font-mono text-muted-foreground">{title}</span>
+              <h2 className="text-xs font-mono text-muted-foreground font-normal m-0">{title}</h2>
             </div>
             <div className="flex items-center gap-1">
               <button
                 onClick={() => setIsMinimized(!isMinimized)}
+                aria-label={isMinimized ? `Restore ${title} window` : `Minimize ${title} window`}
                 className="p-1 rounded hover:bg-muted/50 text-muted-foreground hover:text-foreground transition-colors"
               >
                 {isMinimized ? <Maximize2 className="w-3 h-3" /> : <Minus className="w-3 h-3" />}
               </button>
               <button
                 onClick={onClose}
+                aria-label={`Close ${title} window`}
                 className="p-1 rounded hover:bg-destructive/20 text-muted-foreground hover:text-destructive transition-colors"
               >
                 <X className="w-3 h-3" />

@@ -1,0 +1,7 @@
+# Kumar Kshitiz — Portfolio
+
+> Interactive desktop-OS-style portfolio of Kumar Kshitiz, a software engineer working with Spring Boot, AWS, and React.
+
+## Pages
+
+- [Home](/): Interactive portfolio with About, Projects, Skills, Contact, and Terminal windows.

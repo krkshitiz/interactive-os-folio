@@ -98,7 +98,8 @@ const Index = () => {
     .map(([k]) => k);
 
   return (
-    <div className="h-screen w-screen overflow-hidden bg-background relative">
+    <main className="h-screen w-screen overflow-hidden bg-background relative">
+      <h1 className="sr-only">Kumar Kshitiz — Software Engineer Portfolio</h1>
       <AnimatePresence>
         {!booted && <BootScreen onComplete={() => setBooted(true)} />}
       </AnimatePresence>
@@ -110,7 +111,7 @@ const Index = () => {
 
           {/* Mobile layout */}
           <div className="md:hidden p-4 pb-16 h-full overflow-y-auto space-y-4 relative z-10">
-            <h1 className="neon-text-cyan font-mono text-lg font-bold mb-4">Kshitiz.exe</h1>
+            <p className="neon-text-cyan font-mono text-lg font-bold mb-4">Kshitiz.exe</p>
             
             {/* Mobile icon grid */}
             <div className="grid grid-cols-5 gap-1 mb-4">
@@ -186,7 +187,7 @@ const Index = () => {
           <Taskbar openWindows={openWindowIds} onIconClick={(id) => toggleWindow(id as WindowId)} />
         </>
       )}
-    </div>
+    </main>
   );
 };
 

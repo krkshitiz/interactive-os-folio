@@ -121,11 +121,13 @@ const Terminal = ({ onCommand }: TerminalProps) => {
         <div ref={bottomRef} />
       </div>
       <form onSubmit={handleSubmit} className="flex items-center gap-1 border-t border-border/30 pt-2">
-        <span className="text-neon-green">❯</span>
+        <label htmlFor="terminal-command" className="text-neon-green">❯</label>
         <input
+          id="terminal-command"
           ref={inputRef}
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          aria-label="Terminal command"
           className="flex-1 bg-transparent outline-none text-neon-cyan text-sm font-mono caret-neon-cyan"
           autoFocus
           spellCheck={false}
